@@ -1,89 +1,79 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Para la mujer que amo</title>
-<style>
-    body {
-        margin: 0;
-        font-family: 'Arial', sans-serif;
-        background: #fff7f2;
-        color: #333;
-        text-align: center;
-        overflow-x: hidden;
-    }
-    h1 {
-        font-size: 2.5em;
-        margin: 20px 0;
-        color: #111;
-    }
-    .slider {
-        position: relative;
-        width: 90%;
-        max-width: 400px;
-        margin: 20px auto;
-        overflow: hidden;
-        border-radius: 20px;
-        box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-    }
-    .slides {
-        display: flex;
-        width: 600%;
-        animation: slide 18s infinite;
-    }
-    .slides img {
-        width: 100%;
-        flex: 1 0 100%;
-        object-fit: cover;
-    }
-    @keyframes slide {
-        0% {transform: translateX(0);}
-        16% {transform: translateX(0);}
-        20% {transform: translateX(-100%);}
-        36% {transform: translateX(-100%);}
-        40% {transform: translateX(-200%);}
-        56% {transform: translateX(-200%);}
-        60% {transform: translateX(-300%);}
-        76% {transform: translateX(-300%);}
-        80% {transform: translateX(-400%);}
-        96% {transform: translateX(-400%);}
-        100% {transform: translateX(0);}
-    }
-    .mensaje {
-        margin: 20px auto;
-        font-size: 1.1em;
-        line-height: 1.5;
-        max-width: 600px;
-    }
-    audio {
-        display: none;
-    }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para la mujer que amo</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            background-color: black;
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Heart_coraz%C3%B3n.svg/512px-Heart_coraz%C3%B3n.svg.png');
+            background-repeat: repeat;
+            background-size: 40px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-top: 30px;
+        }
+
+        .slider {
+            margin: 20px auto;
+            width: 80%;
+            max-width: 600px;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+        }
+
+        .slides img {
+            width: 100%;
+            display: block;
+            border-radius: 15px;
+        }
+
+        .mensaje {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 15px;
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        audio {
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
 
-<h1>Para la mujer que amo, Irelys ❤️</h1>
+    <h1>Para la mujer que amo, Irelys 🤍</h1>
 
-<div class="slider">
-    <div class="slides">
-        <img src="foto1.jpg" alt="Foto 1">
-        <img src="foto2.jpg" alt="Foto 2">
-        <img src="foto3.jpg" alt="Foto 3">
-        <img src="foto4.jpg" alt="Foto 4">
-        <img src="foto5.jpg" alt="Foto 5">
+    <div class="slider">
+        <div class="slides">
+            <img src="foto1.jpg" alt="Foto 1">
+            <img src="foto2.jpg" alt="Foto 2">
+            <img src="foto3.jpg" alt="Foto 3">
+            <img src="foto4.jpg" alt="Foto 4">
+            <img src="foto5.jpg" alt="Foto 5">
+        </div>
     </div>
-</div>
 
-<div class="mensaje">
-    <p>Todo ha sido hermoso desde que te conocí, cada momento contigo es único. 
-    Hoy celebramos 6 meses juntos y no puedo estar más feliz. 
-    Te amo y quiero que este detalle quede como un recuerdo especial para nosotros.</p>
-</div>
+    <div class="mensaje">
+        <p>Todo ha sido hermoso desde que te conocí, cada momento contigo es único.<br>
+        Hoy celebramos 6 meses juntos y no puedo estar más feliz.<br>
+        Te amo y quiero que este detalle quede como un recuerdo especial para nosotros.</p>
+    </div>
 
-<audio autoplay loop>
-    <source src="tu-audio.mp3" type="audio/mp3">
-</audio>
+    <audio autoplay loop>
+        <source src="tu-audio.mp3" type="audio/mp3">
+    </audio>
 
 </body>
 </html>
+
