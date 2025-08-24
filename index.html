@@ -1,53 +1,89 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Para la mujer que amo</title>
-    <style>
-        body {
-            text-align: center;
-            background-color: #fff8f0;
-            font-family: Arial, sans-serif;
-        }
-        img {
-            width: 300px;
-            margin: 10px;
-            border-radius: 15px;
-        }
-        .mensaje {
-            margin-top: 20px;
-            font-size: 18px;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para la mujer que amo</title>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Arial', sans-serif;
+        background: #fff7f2;
+        color: #333;
+        text-align: center;
+        overflow-x: hidden;
+    }
+    h1 {
+        font-size: 2.5em;
+        margin: 20px 0;
+        color: #111;
+    }
+    .slider {
+        position: relative;
+        width: 90%;
+        max-width: 400px;
+        margin: 20px auto;
+        overflow: hidden;
+        border-radius: 20px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+    .slides {
+        display: flex;
+        width: 600%;
+        animation: slide 18s infinite;
+    }
+    .slides img {
+        width: 100%;
+        flex: 1 0 100%;
+        object-fit: cover;
+    }
+    @keyframes slide {
+        0% {transform: translateX(0);}
+        16% {transform: translateX(0);}
+        20% {transform: translateX(-100%);}
+        36% {transform: translateX(-100%);}
+        40% {transform: translateX(-200%);}
+        56% {transform: translateX(-200%);}
+        60% {transform: translateX(-300%);}
+        76% {transform: translateX(-300%);}
+        80% {transform: translateX(-400%);}
+        96% {transform: translateX(-400%);}
+        100% {transform: translateX(0);}
+    }
+    .mensaje {
+        margin: 20px auto;
+        font-size: 1.1em;
+        line-height: 1.5;
+        max-width: 600px;
+    }
+    audio {
+        display: none;
+    }
+</style>
 </head>
 <body>
-    <h1>Para la mujer que amo, Irelys</h1>
 
-    <!-- Imágenes -->
-    <div>
-        <img src="imagenes/foto1.jpg" alt="Foto 1">
-        <img src="imagenes/foto2.jpg" alt="Foto 2">
-        <img src="imagenes/foto3.jpg" alt="Foto 3">
-        <img src="imagenes/foto4.jpg" alt="Foto 4">
-        <img src="imagenes/foto5.jpg" alt="Foto 5">
-        <img src="imagenes/foto6.jpg" alt="Foto 6">
+<h1>Para la mujer que amo, Irelys ❤️</h1>
+
+<div class="slider">
+    <div class="slides">
+        <img src="foto1.jpg" alt="Foto 1">
+        <img src="foto2.jpg" alt="Foto 2">
+        <img src="foto3.jpg" alt="Foto 3">
+        <img src="foto4.jpg" alt="Foto 4">
+        <img src="foto5.jpg" alt="Foto 5">
     </div>
+</div>
 
-    <!-- Música de fondo -->
-    <audio autoplay loop>
-        <source src="audio/cancion.mp3" type="audio/mpeg">
-        Tu navegador no soporta el elemento de audio.
-    </audio>
+<div class="mensaje">
+    <p>Todo ha sido hermoso desde que te conocí, cada momento contigo es único. 
+    Hoy celebramos 6 meses juntos y no puedo estar más feliz. 
+    Te amo y quiero que este detalle quede como un recuerdo especial para nosotros.</p>
+</div>
 
-    <!-- Mensaje -->
-    <div class="mensaje">
-        <p>
-            Todo ha sido hermoso desde que te conocí, aun recuerdo la emoción que tuve cuando te pregunté si querías ser mi novia y ver tu emoción fue hermoso.
-            Son 6 meses desde entonces. Todo ha sido maravilloso, contigo he aprendido a amar y querer, espero te guste este detalle.
-        </p>
-    </div>
+<audio autoplay loop>
+    <source src="tu-audio.mp3" type="audio/mp3">
+</audio>
+
 </body>
 </html>
